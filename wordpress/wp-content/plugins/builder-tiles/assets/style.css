@@ -1,0 +1,623 @@
+/* tile size */
+.module-tile {
+	max-width: 100%;
+}
+
+.tiles-wrap.tiles-base-fixed .module-tile.size-square-large,
+.tiles-wrap.tiles-base-fixed .module-tile.size-landscape {
+	width: 480px;
+}
+
+.tiles-wrap.tiles-base-fixed .module-tile.size-square-small,
+.tiles-wrap.tiles-base-fixed .module-tile.size-portrait {
+	width: 240px;
+}
+
+.module_column:not(.col-full) .module-tile.fluid-tile,
+.module-tile.fluid-tile {
+	width: 100%;
+}
+
+/* builder active */
+.themify_builder_active .module-type-tile {
+    visibility: visible;
+}
+.themify_builder_active .module-tile.tile-type-front-blank {
+    outline: 1px dashed rgba( 69, 69, 69, .5 );
+}
+.tb_module_front.module-tile {
+    display: inline-block;
+}
+.tiles-wrap {
+	width: 100%;
+}
+.module-tile + .tb_ui_state_highlight {
+    display: inline-block;
+    width: 100px;
+}
+/* fix #2121, clear floats for non-tile modules while Builder is active */
+.tb_module_front:not(.module-tile) {
+    clear: both;
+}
+/* module tile */
+.tiles-wrap {
+	position: relative;
+	-webkit-backface-visibility: hidden;
+			backface-visibility: hidden;
+	display: -ms-grid;
+	display: grid;
+	grid-auto-flow: dense;
+	opacity: 0;
+	transition: opacity 0.5s ease;
+}
+
+.tiles-wrap.tiles-ready {
+	opacity: 1;
+}
+
+.tiles-ready .module-tile,
+.tiles-ready .tile-flip-box-wrap {
+	visibility: visible !important;
+	opacity: 1 !important;
+}
+
+.tiles-wrap.tiles-base-30 {
+	grid-template-columns: repeat(auto-fill, minmax(33.3333%, 1fr));
+	grid-auto-rows: minmax(33.3333%, auto);
+}
+
+.tiles-wrap.tiles-base-30.module-tiles-masonry .module-tile:not(.size-landscape):not(.size-square-large) {
+	width: 33.3333%;
+}
+
+.tiles-wrap.tiles-base-30.module-tiles-masonry .module-tile.size-landscape,
+.tiles-wrap.tiles-base-30.module-tiles-masonry .module-tile.size-square-large {
+	width: 66.6666%;
+}
+
+.tiles-wrap.tiles-base-25 {
+	grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
+	grid-auto-rows: minmax(25%, auto);
+}
+
+.tiles-wrap.tiles-base-25.module-tiles-masonry .module-tile:not(.size-landscape):not(.size-square-large) {
+	width: 25%;
+}
+
+.tiles-wrap.tiles-base-25.module-tiles-masonry .module-tile.size-landscape,
+.tiles-wrap.tiles-base-25.module-tiles-masonry .module-tile.size-square-large {
+	width: 50%;
+}
+
+.tiles-wrap.tiles-base-20 {
+	grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
+	grid-auto-rows: minmax(20%, auto);
+}
+
+.tiles-wrap.tiles-base-20.module-tiles-masonry .module-tile:not(.size-landscape):not(.size-square-large) {
+	width: 20%;
+}
+
+.tiles-wrap.tiles-base-20.module-tiles-masonry .module-tile.size-landscape,
+.tiles-wrap.tiles-base-20.module-tiles-masonry .module-tile.size-square-large {
+	width: 40%;
+}
+
+.tiles-wrap.tiles-base-16 {
+	grid-template-columns: repeat(auto-fill, minmax(16.666%, 1fr));
+	grid-auto-rows: minmax(16.666%, auto);
+}
+
+.tiles-wrap.tiles-base-16.module-tiles-masonry .module-tile:not(.size-landscape):not(.size-square-large) {
+	width: 16.666%;
+}
+
+.tiles-wrap.tiles-base-16.module-tiles-masonry .module-tile.size-landscape,
+.tiles-wrap.tiles-base-16.module-tiles-masonry .module-tile.size-square-large {
+	width: 33.3333%;
+}
+
+.tiles-wrap.tiles-base-fixed {
+	grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+	grid-auto-rows: minmax(240px, auto);
+}
+
+.module-tile {
+	position: relative;
+	visibility: hidden;
+	opacity: 0;
+}
+
+.themify_builder_active .module-tile,
+.module-tile[style*="absolute"] {
+	visibility: visible !important;
+}
+
+.module-tile.wow {
+	-webkit-animation-fill-mode: backwards;
+	animation-fill-mode: backwards;
+}
+
+.module.module-tile:before {
+	content: '';
+	display: block;
+}
+
+.module.module-tile:not(.size-landscape):not(.size-portrait):before {
+	padding-top: 100%;
+}
+
+.module.module-tile.size-landscape:before {
+	padding-top: 50%;
+}
+
+.module.module-tile.size-portrait:before {
+	padding-top: 200%;
+}
+
+.module-tile.size-square-large {
+	grid-column-end: span 2;
+	grid-row-end: span 2;
+}
+
+.module-tile.size-landscape {
+	grid-column-end: span 2;
+}
+
+.module-tile.size-portrait {
+	grid-row-end: span 2;
+}
+
+.module-tile .tile-inner,
+.module-tile .tile-flip-box-wrap {
+    box-sizing: border-box;
+}
+.module-tile p {
+    margin: 0;
+    padding: 0 0 1em;
+}
+.module-tile h1, 
+.module-tile h2, 
+.module-tile h3, 
+.module-tile h4, 
+.module-tile h5, 
+.module-tile h6 {
+    color: inherit;
+}
+.module-tile a {
+    text-decoration: none;
+    color: inherit;
+}
+.module-tile a:hover {
+    text-decoration: none;
+}
+/* tile title */
+.module-tile .tile-title {
+    font-size: 1.4em;
+    font-weight: normal;
+    margin: 0 0 .3em;
+    padding: 0;
+    line-height: 1.3em;
+    position: relative;
+    z-index: 10;
+    text-transform: none;
+}
+/* tile content */			
+.module-tile .tile-content {
+    line-height: 1.5em;
+}
+/* tile icon */
+.module-tile .tile-icon {
+    font-size: 85px;
+    display: block;
+    text-align: center;
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -60px auto 0 -60px;
+    z-index: 10;
+}
+.module-tile .tile-title + .tile-icon {
+    top: 60%;
+}
+.module-tile .tile-icon:before {
+    vertical-align: middle;
+}
+/* action button */
+.module-tile .action-button {
+    display: inline-block;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 1.2em;
+    left: 7%;
+    z-index: 100;
+    text-decoration: none !important;
+    font-size: .9em;
+}
+.module-tile .action-button span {
+    width: 28px;
+    height: 28px;
+    display: inline-block;
+    border: 1px solid currentColor;
+    border-radius: 100%;
+    position: relative;
+    vertical-align: middle;
+    margin-right: 0.3em;
+}
+.module-tile .action-button span:before {
+    content: "";
+    display: inline-block;
+    border: 1px solid transparent;
+    border-top-color: inherit;
+    border-right-color: inherit;
+    vertical-align: middle;
+    margin-left: -3px;
+    width: 35%;
+    height: 35%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotateZ(45deg);
+}
+/* flip back button */
+.module-tile .tile-inner a.tile-flip-back-button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-left: 20px solid transparent;
+    border-bottom: 20px solid #ec0038;
+    border-right: 20px solid #ec0038;
+    color: #fff;
+    font-size: 12px;
+    padding: 0;
+}
+.module-tile .tile-flip-back-button:before,
+.module-tile .tile-flip-back-button:after {
+    content: '';
+    display: inline-block;
+}
+.module-tile .tile-flip-back-button:before {
+    border-top: 0px;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    border-left: 0px;
+    height: 1em;
+    width: 1em;
+    border-bottom-right-radius: 7px;
+    position: absolute;
+    left: -3px;
+}
+.module-tile .tile-flip-back-button:after {
+    border: 1px solid transparent;
+    border-top: 1px solid;
+    border-right: 1px solid;
+    position: absolute;
+    top: 6px;
+    left: 2px;
+    width: 9px;
+    height: 9px;
+    transform: rotateZ(-45deg);
+    transform-origin: 0 0;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+.module-tile .tile-back .tile-flip-back-button,
+.module-tile.builder-tile-flip .tile-front .tile-flip-back-button {
+    display: none;
+}
+.module-tile.builder-tile-flip .tile-back .tile-flip-back-button {
+    display: block;
+}
+.module-tile.no-flip .tile-flip-back-button {
+    display: none !important;
+}
+.tile-type-text .tile-inner {
+    padding: 7%;
+}
+.tile-type-button,
+.tile-type-gallery,
+.tile-type-text {
+    position: relative;
+    height: 100%;
+}
+.tile-type-button .tile-inner {
+    height: 100%;
+}
+.tile-type-button .tile-inner a {
+    height: 100%;
+    width: 100%;
+    display: block;
+    position: absolute; /* make the entire tile clickable */
+    box-sizing: border-box;
+}
+.tile-type-button .tile-inner .tile-title {
+    padding: 7%;
+}
+.tile-type-button .tile-inner .tile-content {
+    padding: 0 0 .65em 1.9em;
+}
+/* text tile */
+.tile-type-text {
+    overflow-y: auto !important; /* make text overflow */
+}
+/* gallery slider */
+.tile-type-gallery .twg-wrap {
+    z-index: 10;
+    overflow: hidden;
+}
+.tile-type-gallery .twg-wrap img {
+    object-fit: cover; /* make gallery img fullcover */
+}
+.tile-type-gallery .twg-controls {
+    z-index: 7;
+}
+.tile-type-gallery .twg-wrap,
+.tile-type-gallery .tile-inner,
+.tile-type-gallery .twg-wrap .gallery-image-holder {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+/* gallery slider timer */
+.tile-type-gallery .twg-wrap .gallery-slider-timer {
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    top: -2px;
+}
+.tile-type-gallery .twg-wrap .timer-bar {
+    height: 2px;
+}
+.tile-type-gallery .twg-wrap .timer-bar {
+    background: #0b79d6;
+    color: #fff;
+}
+.tile-type-gallery .carousel-wrap {
+    visibility: visible;
+    height: auto;
+}
+.tile-type-gallery .twg-wrap .gallery-slider-wrap {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height:auto;
+    background: #000;
+    background: rgba(0,0,0,.3);
+}
+.tile-type-gallery .gallery-slider-thumbs {
+    margin: 0;
+    padding: 0;
+}
+.tile-type-gallery .gallery-slider-thumbs li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    float: left;
+}
+.tile-type-gallery .gallery-slider-thumbs li a img {
+    max-width: 100px;
+    height: auto;
+}
+.tile-type-gallery .twg-controls .twg-list li {
+    width: 40px !important;
+    list-style: none;
+}
+.tile-type-gallery .gallery-slider-thumbs li a,
+.tile-type-gallery .gallery-slider-thumbs li a img {
+    display: block;
+    border: none;
+    overflow: hidden;
+}
+.tile-type-gallery .gallery-slider-thumbs li a:hover > img,
+.tile-type-gallery .gallery-slider-thumbs li.current > img {
+    border: 1px solid #1e73ba;
+}
+.tile-type-gallery .gallery-slider-thumbs li.current a:hover img {
+    cursor: default;
+    border: none;
+}
+.tile-type-gallery .twg-wrap .twg-deleteable,
+.tile-type-gallery .twg-wrap .twg-behind {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: 100%;
+    height: auto;
+}
+.tile-type-gallery .twg-wrap.no-timer .twg-controls {
+    visibility: hidden;
+}
+.tile-type-gallery .text-caption {
+    background: rgba(0,0,0, .5);
+    color: #fff;
+    padding: 2px 5px;
+    display: inline-block;
+    max-width: 50%;
+    position: relative;
+}
+.module-tile .tile-type-gallery .with-timer + .action-button {
+    margin-bottom: 30px;
+}
+.module-tile .tile-flip-box-wrap {
+	position: absolute;
+	top: 0;
+	left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-perspective: 1000px;
+    -moz-perspective: 1000px;
+    -o-perspective: 1000px;
+    -ms-perspective: 1000px;
+    perspective: 1000px;
+    overflow: hidden;
+}
+.module-tile .tile-flip-box {
+    height: 100%;
+    position: relative;
+    display: block;
+    transform-style: preserve-3d;
+    transition: 750ms;
+}
+.module-tile .tile-front,
+.module-tile .tile-back {
+    height: 100%;
+    overflow: hidden;
+    margin-bottom: 0;
+    box-sizing: border-box;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    z-index: 11;
+    background-position: center;
+    background-size: cover;
+}
+.module-tile .tile-back {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: table;
+    box-sizing: border-box;
+    height: 100%;
+    bottom: 0;
+    visibility: hidden;
+    z-index: 100;
+}
+.builder-is-mobile .module-tile .tile-back {
+    display: block;
+}
+.module-tile.builder-tile-flipped .tile-back,
+.module-tile .tile-back.animated {
+    visibility: visible;
+}
+/* Horizontal Flip */
+.module-tile.flip-vertical .tile-front,
+.module-tile.flip-vertical .tile-back,
+.module-tile.flip-horizontal .tile-front,
+.module-tile.flip-horizontal .tile-back {
+    transition: 750ms;
+}
+.module-tile.flip-horizontal.builder-tile-flip .tile-back,
+.module-tile.flip-horizontal .tile-front {
+    transform: rotateY(0deg);
+}
+.module-tile.flip-horizontal .tile-back {
+    transform: rotateY(-180deg);
+}
+.module-tile.flip-horizontal.builder-tile-flip .tile-front {
+    transform: rotateY(180deg);
+}
+/* Vertical Flip */
+.module-tile.flip-horizontal .tile-flip-box-wrap,
+.module-tile.flip-vertical .tile-flip-box-wrap {
+    overflow: visible;
+}
+.module-tile.flip-vertical.builder-tile-flip .tile-back,
+.module-tile.flip-vertical .tile-front {
+    transform: rotateX(0deg);
+}
+.module-tile.flip-vertical .tile-back {
+    transform: rotateX(-180deg);
+}
+.module-tile.flip-vertical.builder-tile-flip .tile-front {
+    transform: rotateX(180deg);
+}
+/* Image hover effect */
+.module-tile .tile-type-gallery .backstretch img {
+    transition: all 0.2s ease-in-out;
+}
+.module-tile:hover .tile-type-gallery .backstretch img {
+    transform: scale(1.1);
+}
+.module-tile.no-flip .tile-front,
+.module-tile.no-flip .tile-back {
+    transition: background-size .2s ease-in-out;
+}
+/* map tile images fix */
+.module-tile .tile-type-map img {
+    max-width: initial;
+}
+/* prevent flip effects from covering the map tiles */
+.module-tile.tile-type-front-map {
+    position: relative;
+    z-index: 9;
+}
+.tile-loader {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: url( loading-bars.svg ) no-repeat center center;
+}
+/* Docked Panel Fields */
+.tb_module_panel_docked .tb_tile_options .tb_multi_fields .tb_field {
+	width: 100%;
+	max-width: none;
+}
+
+.module-tile .tile-inner {
+	height: inherit;
+}
+
+.module-tile .themify_map {
+	height: 100%;
+}
+
+/* Media Queries */
+@media (max-width: 780px) {
+    .module-tile .tile-content {
+        font-size: .8em;
+        line-height: 1.3em;
+    }
+	.tiles-wrap {
+		grid-template-columns: repeat(auto-fill, minmax(50%, 1fr)) !important;
+	}
+
+    .module-tile .tile-title {
+        font-size: 1.1em;
+    }
+    .module-tile .tile-title + .tile-icon {
+        top: 75%;
+    }
+    .module-tile .tile-icon {
+        font-size: 60px;
+    }
+
+    .tile-type-text .tile-inner {
+        padding: 1.3em;
+    }
+
+    /* action button */
+    .module-tile .action-button {
+        left: 1.3em;
+        font-size: .85em;
+    }
+    .module-tile .action-button span {
+        width: 22px;
+        height: 22px;
+        display: inline-block;
+        border: 1px solid;
+        border-radius: 100%;
+        position: relative;
+        vertical-align: middle;
+        margin-right: .3em;
+    }
+}
+@media (max-width: 376px) {
+	.module_column.col-full .module-tile.fluid-tile {
+		width: 100% !important;
+	}
+}
+/* RTL */
+.rtl .module.module-tile {
+    float: right;
+}
