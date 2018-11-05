@@ -9,6 +9,9 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
 	<!-- wp_head -->
 	<?php wp_head(); ?>
+	<script type="text/javascript" src="<?php bloginfo("template_url"); ?>/js/customAboutContent.js"></script>
+	<link type="text/css" rel="stylesheet" href="<?php bloginfo("template_url"); ?>/styles/customSideBar.css">
+
 
 </head>
 

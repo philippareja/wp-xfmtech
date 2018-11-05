@@ -1,0 +1,37 @@
+.header-nav #main-nav-wrap-icons {
+    display: block;
+    width: 100%;
+    top: 72px;
+    z-index: 99999999;
+    position: absolute;
+    left: 259px;
+}
+
+.header-nav #main-nav-wrap-icons {
+    width: 15%
+}
+
+.header-nav #main-nav-wrap-icons > #main-nav li {
+    padding: 7px 0;
+}
+
+.header-nav #main-nav-wrap-icons > #main-nav li a {
+    font-size: 0 !important;
+    text-align: center;
+    padding-top: 10px 
+}
+
+.header-nav #main-nav-wrap-icons > #main-nav li a:hover,
+.header-nav #main-nav-wrap-icons > #main-nav .current_page_item > a {
+    border-left: 1px solid #fcd404 !important; 
+}
+
+.header-nav #main-nav-wrap-icons > #main-nav li a .fa {
+    font-size: 27px !important;
+}
+#main-nav-wrap-icons #main-nav > li a {
+    border: 0px !important;
+}
+#main-nav-wrap > ul li a .fa{
+    font-size: 0 !important;
+}

@@ -71,18 +71,40 @@
 .themify_builder .slider-100-4-0-0.module-slider .slide-content,.themify_builder .slider-100-4-0-0.module-slider .slide-content h1,.themify_builder .slider-100-4-0-0.module-slider .slide-content h2,.themify_builder .slider-100-4-0-0.module-slider .slide-content h3,.themify_builder .slider-100-4-0-0.module-slider .slide-content h4,.themify_builder .slider-100-4-0-0.module-slider .slide-content h5,.themify_builder .slider-100-4-0-0.module-slider .slide-content h6,.themify_builder .slider-100-4-0-0.module-slider .slide-content .slide-title,.themify_builder .slider-100-4-0-0.module-slider .slide-content .slide-title a{color:#323232; }
 .themify_builder .slider-100-4-0-0.module-slider .slide-content{font-size:13px; }
 .themify_builder .slider-100-4-0-0.module-slider{margin-top:100px; }
-.themify_builder_100_row.module_row_5.module_row{background-repeat: repeat; background-attachment: scroll; background-position: center center; background-color:#f3f6f8; padding-top:50px; padding-bottom:50px; }
+.themify_builder_100_row.module_row_5.module_row{background-repeat: repeat; background-attachment: scroll; background-position: center center; background-color:#f3f6f8; padding-top:100px; padding-bottom:100px; margin-top:100px; margin-bottom:100px; }
 .themify_builder_100_row.module_row_5.module_row>div.row_inner{background-repeat: repeat; background-attachment: scroll; background-position: center center; }
-.themify_builder .text-100-5-0-0.module-text{background-repeat: repeat; background-position: left top; }
-.themify_builder .text-100-5-0-0.module.module-text h1{font-family: Quicksand; }
-.themify_builder .text-100-5-0-0.module-text h1{font-weight: 400; }
-.sub_column_post_100.sub_column_5-0-1-0.module_column{background-repeat: repeat; background-attachment: scroll; background-position: center center; margin-right:100px; margin-left:100px; }
-.sub_column_post_100.sub_column_5-0-1-0.module_column>div.tb-column-inner,.sub_column_post_100.sub_column_5-0-1-0.module_column>.tb_holder{background-repeat: repeat; background-attachment: scroll; background-position: center center; }
-.themify_builder .tile-100-sub_row_5-0-1-0-0.module-tile{font-family: Quicksand; font-weight: 400; text-align: left; }
-.themify_builder .tile-100-sub_row_5-0-1-0-1.module-tile{font-family: Quicksand; font-weight: 400; }
-.themify_builder .tile-100-sub_row_5-0-1-0-1.module-tile .tile-flip-box-wrap{padding-right:0px; }
-.themify_builder .tile-100-sub_row_5-0-1-0-2.module-tile{font-family: Quicksand; font-weight: 400; }
-.themify_builder .tile-100-sub_row_5-0-1-0-3.module-tile{font-family: Quicksand; font-weight: 400; }
-.themify_builder_100_row.module_row_6.module_row{background-repeat: repeat; background-attachment: scroll; background-position: center center; margin-top:100px; }
+.themify_builder .image-100-sub_row_5-0-0-0-0.module-image{background-color:#ffffff; background-repeat: repeat; background-position: left top; margin-bottom:15px; }
+.themify_builder .image-100-sub_row_5-0-0-0-1.module-image{background-color:#ffffff; background-repeat: repeat; background-position: left top; }
+.themify_builder .image-100-sub_row_5-0-0-1-0.module-image{background-color:#ffffff; background-repeat: repeat; background-position: left top; margin-bottom:15px; }
+.themify_builder .image-100-sub_row_5-0-0-1-1.module-image{background-color:#ffffff; background-repeat: repeat; background-position: left top; }
+.themify_builder .text-100-5-1-0.module-text{background-repeat: repeat; background-position: left top; margin-bottom:100px; }
+.themify_builder .text-100-5-1-0.module.module-text h3:not(.module-title){font-family: Quicksand; }
+.themify_builder .text-100-5-1-0.module-text h3{font-weight: 400; }
+.themify_builder .text-100-5-1-0.module.module-text h4{font-family: Quicksand; }
+.themify_builder .text-100-5-1-0.module-text h4{font-weight: 400; }
+.themify_builder .text-100-5-1-1.module-text{background-repeat: repeat; background-position: left top; }
+.themify_builder .text-100-5-1-1.module-text,.themify_builder .text-100-5-1-1.module-text h1,.themify_builder .text-100-5-1-1.module-text h2,.themify_builder .text-100-5-1-1.module-text h3:not(.module-title),.themify_builder .text-100-5-1-1.module-text h4,.themify_builder .text-100-5-1-1.module-text h5,.themify_builder .text-100-5-1-1.module-text h6{font-family: Quicksand; font-weight: 400; }
+.themify_builder .text-100-5-1-2.module-text{background-repeat: repeat; background-position: left top; }
+.themify_builder .text-100-5-1-2.module-text,.themify_builder .text-100-5-1-2.module-text h1,.themify_builder .text-100-5-1-2.module-text h2,.themify_builder .text-100-5-1-2.module-text h3:not(.module-title),.themify_builder .text-100-5-1-2.module-text h4,.themify_builder .text-100-5-1-2.module-text h5,.themify_builder .text-100-5-1-2.module-text h6{font-family: Quicksand; font-weight: 400; }
+.themify_builder .text-100-5-1-3.module-text{background-repeat: repeat; background-position: left top; }
+.themify_builder .text-100-5-1-3.module-text,.themify_builder .text-100-5-1-3.module-text h1,.themify_builder .text-100-5-1-3.module-text h2,.themify_builder .text-100-5-1-3.module-text h3:not(.module-title),.themify_builder .text-100-5-1-3.module-text h4,.themify_builder .text-100-5-1-3.module-text h5,.themify_builder .text-100-5-1-3.module-text h6{font-family: Quicksand; font-weight: 400; }
+.themify_builder .text-100-5-1-3.module-text a{color:#323232; }
+.themify_builder .text-100-5-1-4.module-text{background-repeat: repeat; background-position: left top; }
+.themify_builder .text-100-5-1-4.module-text,.themify_builder .text-100-5-1-4.module-text h1,.themify_builder .text-100-5-1-4.module-text h2,.themify_builder .text-100-5-1-4.module-text h3:not(.module-title),.themify_builder .text-100-5-1-4.module-text h4,.themify_builder .text-100-5-1-4.module-text h5,.themify_builder .text-100-5-1-4.module-text h6{font-family: Quicksand; font-weight: 400; }
+.themify_builder_100_row.module_row_6.module_row{background-repeat: repeat; background-attachment: scroll; background-position: center center; background-color:#f3f6f8; padding-top:50px; padding-bottom:50px; }
 .themify_builder_100_row.module_row_6.module_row>div.row_inner{background-repeat: repeat; background-attachment: scroll; background-position: center center; }
-.themify_builder .contact-100-sub_row_6-0-0-0-0.module-contact{font-family: Quicksand; font-weight: 400; }
+.themify_builder .text-100-6-0-0.module-text{background-repeat: repeat; background-position: left top; }
+.themify_builder .text-100-6-0-0.module.module-text h1{font-family: Quicksand; }
+.themify_builder .text-100-6-0-0.module-text h1{font-weight: 400; }
+.sub_column_post_100.sub_column_6-0-1-0.module_column{background-repeat: repeat; background-attachment: scroll; background-position: center center; margin-right:100px; margin-left:100px; }
+.sub_column_post_100.sub_column_6-0-1-0.module_column>div.tb-column-inner,.sub_column_post_100.sub_column_6-0-1-0.module_column>.tb_holder{background-repeat: repeat; background-attachment: scroll; background-position: center center; }
+.themify_builder .tile-100-sub_row_6-0-1-0-0.module-tile{font-family: Quicksand; font-weight: 400; text-align: left; }
+.themify_builder .tile-100-sub_row_6-0-1-0-1.module-tile{font-family: Quicksand; font-weight: 400; }
+.themify_builder .tile-100-sub_row_6-0-1-0-1.module-tile .tile-flip-box-wrap{padding-right:0px; }
+.themify_builder .tile-100-sub_row_6-0-1-0-2.module-tile{font-family: Quicksand; font-weight: 400; }
+.themify_builder .tile-100-sub_row_6-0-1-0-3.module-tile{font-family: Quicksand; font-weight: 400; }
+.themify_builder_100_row.module_row_7.module_row{background-repeat: repeat; background-attachment: scroll; background-position: center center; margin-top:100px; }
+.themify_builder_100_row.module_row_7.module_row>div.row_inner{background-repeat: repeat; background-attachment: scroll; background-position: center center; }
+.themify_builder .contact-100-sub_row_7-0-0-0-0.module-contact{font-family: Quicksand; font-weight: 400; }
+.themify_builder .contact-100-sub_row_7-0-0-0-0.module-contact .control-label{font-family: Quicksand; font-weight: 400; }
+.themify_builder .contact-100-sub_row_7-0-0-0-0.module-contact .builder-contact-field-send button{background-color:#fcd404; font-family: Quicksand; font-weight: 400; color:#323232; }

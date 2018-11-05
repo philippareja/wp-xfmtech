@@ -1,8 +1,4 @@
 /* Themify Customize Styling */
-input[type=reset], input[type=submit], button {	background: none;
-	background-color: #fbd71c;
-	color: #323232; 
-}
 #main-nav a {	
 	font-family:Quicksand;	font-weight:300;
 	text-transform:capitalize;	text-align:left; 
